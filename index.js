@@ -1,8 +1,10 @@
 const express = require('express');
+const dotenv = require('dotenv')
 const ytdl = require('ytdl-core');
 var cors = require('cors')
 const userRouter = require('./src/routes/user');
 const  mongoose = require('mongoose');
+dotenv.config()
 
 const connection = async() => {
     try {
